@@ -37,3 +37,4 @@ npm run lint
 ## Temas importantes vistos en la documentación
 - API Styles -> Composition API
 - Reactivity Fundamentals
+- Computed Properties
