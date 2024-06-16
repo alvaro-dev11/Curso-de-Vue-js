@@ -38,3 +38,4 @@ npm run lint
 - API Styles -> Composition API
 - Reactivity Fundamentals
 - Computed Properties
+- Component v-model
