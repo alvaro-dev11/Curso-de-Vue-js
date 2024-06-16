@@ -15,6 +15,10 @@ const agregarTarea = () => {
   // Para limpiar el valor del input
   nuevaTarea.value = ''
 }
+
+const borrarTarea = (index) => {
+  tareas.value.splice(index, 1)
+}
 </script>
 
 <template>
@@ -31,6 +35,7 @@ const agregarTarea = () => {
       <!-- Recorremos el arreglo tareas, le damos un indice y mostramos la nueva tarea en la lista -->
       <li v-for="(tarea, index) in tareas" :key="index">
         {{ tarea }}
+        <button @click="borrarTarea">Eliminar</button>
       </li>
     </ul>
   </div>
