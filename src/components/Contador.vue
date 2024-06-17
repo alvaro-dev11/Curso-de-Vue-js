@@ -27,6 +27,7 @@ const cambiarColor = computed(() => {
 </script>
 
 <template>
+  <h1>Contador</h1>
   <p :class="cambiarColor">{{ contador }}</p>
 
   <button @click="incrementar">Incrementar</button>
