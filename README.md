@@ -34,6 +34,18 @@ npm run build
 npm run lint
 ```
 
+### Validación de formularios
+
+```sh
+npm install vee-validate --save
+```
+
+### Para crear esquemas de validación
+
+```sh
+npm install @vee-validate/yup
+```
+
 ## Temas importantes vistos en la documentación
 - API Styles -> Composition API
 - Reactivity Fundamentals
