@@ -1,0 +1,3 @@
+# composables -> carpeta que sirve para guardar código reutilizable, su nomenclatura siempre empieza con la palabra "use" seguido de el "NombreArchivo"
+
+# helpers -> carpeta que sirve para guardar código que haga peticiones a APIs con axios o fetch

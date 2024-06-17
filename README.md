@@ -46,6 +46,12 @@ npm install vee-validate --save
 npm install @vee-validate/yup
 ```
 
+### Para hacer peticiones HTTP
+
+```sh
+npm i axios
+```
+
 ## Temas importantes vistos en la documentación
 - API Styles -> Composition API
 - Reactivity Fundamentals
