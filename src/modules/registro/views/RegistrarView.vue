@@ -1,8 +1,16 @@
 <script setup>
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import { schema } from '../schemas/validationSchema.js'
+import { useRegistrarStore } from '../stores/registrarStore.js'
+import { ref, defineModel } from 'vue'
+
+const registrarStore = useRegistrarStore()
+
+const nombre = defineModel('nombre')
+const correo = defineModel('correo')
 
 const onSubmit = () => {
+  registrarStore.guardarRegistro(nombre.value, correo.value)
   console.log('Formulario enviado')
 }
 </script>
@@ -15,7 +23,14 @@ const onSubmit = () => {
       <div class="form">
         <label for="nombre">Nombre:</label>
 
-        <Field type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"></Field> <br>
+        <Field
+          type="text"
+          v-model="nombre"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+        ></Field>
+        <br />
 
         <ErrorMessage name="nombre" />
       </div>
@@ -23,9 +38,16 @@ const onSubmit = () => {
       <div class="form">
         <label for="correo">Correo:</label>
 
-        <Field type="email" id="correo" name="correo" placeholder="Ingrese su correo"></Field> <br>
+        <Field
+          type="email"
+          v-model="correo"
+          id="correo"
+          name="correo"
+          placeholder="Ingrese su correo"
+        ></Field>
+        <br />
 
-        <ErrorMessage name="correo"/>
+        <ErrorMessage name="correo" />
       </div>
 
       <button type="submit">Registrar</button>
