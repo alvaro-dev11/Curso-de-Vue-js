@@ -9,6 +9,7 @@ const texto = ref('')
 <template>
   <Sidebar />
 
+  <!-- Enviando una variable reactiva como prop al componente hijo -->
   <Header :mensaje="texto" />
 
   <main class="container">
