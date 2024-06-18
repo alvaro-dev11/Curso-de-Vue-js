@@ -57,3 +57,4 @@ npm i axios
 - Reactivity Fundamentals
 - Computed Properties
 - Component v-model
+- Props

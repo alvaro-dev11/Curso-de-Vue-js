@@ -1,12 +1,19 @@
 <script setup>
 import Wheater from './Wheater.vue'
+import { defineProps, ref, watch } from 'vue'
+
+const props = defineProps(['mensaje'])
+const mensajeRecibido = ref(props.mensaje)
+watch(
+  () => props.mensaje,
+  (newValue) => {
+    mensajeRecibido.value = newValue
+  }
+)
 </script>
 
 <template>
-  <header class="header">
-    <h3>La temperatura actual es:</h3>
-    <Wheater />
-  </header>
+  <header class="header">{{ mensajeRecibido }} <Wheater /></header>
 </template>
 
 <style scoped>
