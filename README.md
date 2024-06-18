@@ -58,3 +58,4 @@ npm i axios
 - Computed Properties
 - Component v-model
 - Props
+- Computed Properties

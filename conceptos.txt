@@ -1,3 +1,11 @@
 # composables -> carpeta que sirve para guardar código reutilizable, su nomenclatura siempre empieza con la palabra "use" seguido de el "NombreArchivo"
 
 # helpers -> carpeta que sirve para guardar código que haga peticiones a APIs con axios o fetch
+
+# v-show -> permite mostrar un elemento html siempre que sea true, es decir agrega un estilo en línea, display: none al elemento html
+
+# v-if -> sirve para mostrar contenido siempre que la condición sea true pero en el codigo html lo desaparece
+
+# v-else-if -> muestra contenido html si no paso el "if"
+
+# v-else -> muestra contenido html si no paso ninguna condición

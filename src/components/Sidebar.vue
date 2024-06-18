@@ -47,6 +47,10 @@ watch(
       <li>
         <router-link to="/registrar">Registrar usuario</router-link>
       </li>
+
+      <li>
+        <router-link to="/calcular">Calcular</router-link>
+      </li>
     </ul>
   </aside>
 </template>
